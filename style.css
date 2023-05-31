@@ -49,6 +49,12 @@ body{
    width: 100%;
 }
 
+.logo {
+   font-size: 3.6rem;
+   font-weight: 300;
+   font-family: var(--font-brand);
+}
+
 .navigation__list{
    display: flex;
    gap: 4.8rem;
@@ -95,6 +101,13 @@ section{
    line-height: 1.2;
    margin-bottom: 1.2rem;
    text-transform: capitalize;
+}
+
+.heading-focus{
+   font-size: 6.2rem;
+   background: -webkit-linear-gradient(45deg, #511e1b, #f25d58);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 .heading-sub{
