@@ -12,6 +12,7 @@ FONT SIZE SYSTEM (px)
    --clr-primary:  #f25d58;
    --clr-secondary: #511e1b;
    --clr-tertiary: #a33113;
+   --clr-quaternary: #a69288;
 
    --font-brand: 'Playfair', serif;
    --font-regular: 'Inter', sans-serif;
@@ -77,6 +78,8 @@ section{
    place-items: center;
    background-image: url('./images/bgBlur1.png');
    background-size: cover;
+
+   transition: background-image 1s ease-in;
 }
 
 .textbox{
@@ -105,9 +108,10 @@ section{
 
 .heading-focus{
    font-size: 6.2rem;
-   background: -webkit-linear-gradient(45deg, #511e1b, #f25d58);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   color: var(--clr-secondary);
+   /* background: -webkit-linear-gradient(45deg, #511e1b, #f25d58); */
+   /* -webkit-background-clip: text; */
+   /* -webkit-text-fill-color: transparent; */
 }
 
 .heading-sub{
@@ -122,6 +126,7 @@ section{
    border-radius: 2.4rem;
    font-size: 1.8rem;
    text-transform: capitalize;
+   box-shadow: 0 0.8rem 1.6rem rgb(0, 0, 0, 0.6);
    transition: all 500ms ease-in-out ;
 }
 
@@ -133,20 +138,29 @@ section{
    display: flex;
    align-items: center;
    flex-basis: 45%;
+
+   position: relative;
 }
 
 .can-img{
    width: 100%;
    object-fit: cover;
    scale: 1.4;
-   margin-left: -6rem;
+   margin-left: -7rem;
 }
 
 .arrow-btn{
    color: white;
-   /* border: none; */
+   border: none;
    border-radius: 50%;
-   /* background: var(--clr-tertiary); */
+   background: none;
    padding: 1rem;
    cursor: pointer;
+
+   position: absolutes;
+   z-index: 2;
+}
+
+.arrow-btn:hover{
+   background: var(--clr-tertiary);
 }
