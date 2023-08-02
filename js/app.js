@@ -2,6 +2,15 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const hero = document.querySelector('.hero');
 const canImg = document.querySelector('.can-img');
+
+const nav = document.querySelector('.navigation')
+const btnMenu = document.querySelector('.btn-mobile-nav');
+
+
+btnMenu.addEventListener("click", function () {
+  nav.classList.toggle('nav-open');
+})
+
 const images = [
   './images/can1.png',
   './images/can2.png',
